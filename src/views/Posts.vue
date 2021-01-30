@@ -1,6 +1,5 @@
 <template>
-  <div class="home">
-    <h1>POSTS</h1>
+  <div class="posts-view">
     <SinglePost />
   </div>
 </template>

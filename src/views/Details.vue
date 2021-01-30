@@ -1,17 +1,7 @@
 <template>
-  <h1>DETAILS</h1>
-  <div v-if="!loading" class="post">
-    <h3>{{ post.title }}</h3>
-    <p class="pre">{{ post.body }}</p>
-    <div
-      style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-      "
-    >
-      <span v-for="tag in post.tags" :key="tag">{{ `#${tag}` }}</span>
+  <div v-if="!loading">
+    <div class="post">
+      <PostList :post="post" />
     </div>
   </div>
   <Spinner v-else />
@@ -19,12 +9,14 @@
 
 <script>
 import getPost from "../composables/getPost";
+import PostList from "../components/PostList.vue";
 import Spinner from "../components/Spinner.vue";
 
 export default {
   props: ["id"],
   components: {
     Spinner,
+    PostList,
   },
   setup(props) {
     const { post, loading } = getPost(props.id);

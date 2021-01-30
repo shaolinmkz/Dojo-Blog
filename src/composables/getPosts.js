@@ -11,7 +11,7 @@ const getPosts = () => {
 		.finally(() => {
 			setTimeout(() => {
 				loading.value = false;
-			}, 2000);
+			}, 1000);
 		});
 
 	return { posts, loading };

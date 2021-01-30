@@ -24,4 +24,4 @@ npm run json-sr
 npm run serve
 ```
 ## Gallery
-![](https://res.cloudinary.com/shaolinmkz/image/upload/v1611620697/Random-Icons/project-planner-vue.gif)
+![](https://res.cloudinary.com/shaolinmkz/image/upload/v1612050443/Random-Icons/dojo-post.gif)

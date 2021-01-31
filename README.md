@@ -5,7 +5,7 @@ Follow these steps below to start-up json-server locally and serve app
 
 ### Steps
 ```bash
-cd project-planner-vue
+cd dojo-blog
 ```
 
 ```bash

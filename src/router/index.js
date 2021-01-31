@@ -6,13 +6,10 @@ import Tag from "../views/Tag.vue";
 
 const routes = [
 	{
-		path: "/",
-		redirect: "/posts",
-	},
-	{
 		path: "/posts",
 		name: "Posts",
-		component: Posts,
+    component: Posts,
+    alias: '/'
 	},
 	{
 		path: "/posts/:id",

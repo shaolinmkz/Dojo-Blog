@@ -1,5 +1,5 @@
 <template>
-  <div v-if="!loading" style="width: 100%">
+  <div v-if="!loading" class="post_section">
     <div class="post" v-for="post in posts" :key="post.id">
       <PostList :post="post" />
     </div>
@@ -53,5 +53,14 @@ export default {
   padding-right: 40px;
   left: -30px;
   transform: rotateZ(-1deg);
+}
+.post_section {
+  width: 100%;
+  overflow: auto;
+  height: 70vh;
+}
+
+.post_section::-webkit-scrollbar {
+  opacity: 0;
 }
 </style>
